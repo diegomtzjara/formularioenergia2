@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Consumo de Energía</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form id="formEnergia">
+    <h2>Registro de Consumo de Energía 🏡</h2>
+    <input type="text" id="nombre" placeholder="¿Cuál es tu nombre?" required>
+    <input type="number" id="habitantes" placeholder="¿Cuántas personas viven en el hogar?" min="1" required>
+    <input type="number" id="consumoMensual" placeholder="¿Cuántos kWh consumes al mes?" min="0" required>
+    
+    <select id="aire">
+      <option value="">¿Tienen aire acondicionado?</option>
+      <option value="Sí">Sí</option>
+      <option value="No">No</option>
+    </select>
+    
+    <input type="text" id="electro" placeholder="Menciona los electrodomésticos principales">
+    
+    <button type="submit">Registrar Consumo</button>
+    <div id="resultado"></div>
+    <div id="sugerencias"></div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
